@@ -4,73 +4,254 @@
   box-sizing: border-box;
 }   
 
-h1 {
-    color: pink;
+.html {
+    font-size: 10px;
+}
+
+
+
+
+/*--------------Navigation Menu --------------------------- */
+#main-nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    width: 100%;
+    /* justify-content: spce-between; */
+  
+    
+    
 }
 
 #main-nav a {
-    color: #306319;
-    background: #e3eceb;
-    display: block;
+    color: black;
+    background: white;
+    /* display: block; */
     height: 64px;
+    width: auto;
     font-family: lato;
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     text-decoration: none;
     transition: background 0.4s;
+    padding: 6px 10px 6px 10px;  
+}
+
+/* .arrow:nth-child(2) {
+    margin-right: 100px; */
+
 }
 
 #main-nav a:hover {
-    background: #baf3d4;
+    background: lightgrey;
+
+    /* box-shadow: -5px 5px 5px 5px; */
+    padding-right: 5px;
+    /* width: 20px;
+    height: 20px; */
+    /* z-index: 15; */
+
+    
+    
+
 }
 
 #main-nav ul {
     list-style: none;
     display: flex;
+  
+  
+
 }
 
-#main-nav li {
+#main-nav ul li {
     width: 100%;
     text-align: center;
     position: relative;
+    /* height: 5rem; */
+   
+  
+  
 }
 
-#main-nav li:hover .submenu > li {
+#main-nav li:hover .submenu li {
     display: block;
-    top: 0px;
+    top: 0rem;
+    
+    
+    
 }
-.submenu li{
+.submenu  li{
     display: none;
     position: absolute;
-    width: 100%;
+    top: 0px;
+    
 }
 
 .submenu {
     display: flex;
     flex-direction: column;
-    position: absolute:
+    position: absolute;
     width: 100%;
 }
 
-/* .submenu
+.submenu li {
+    position: absolute;
+    
+
+}
+
+
 .submenu li:hover {
-    display: none;
-} */
+    display: block;
+  
+    
+} 
 
 .arrow {
-    margin-left: 8px;
-    color: #306319;
-    font-size: 12px;
+
+    color: black;
+    font-size: 1rem;
+    padding-left: 8px;
+    
 }
 
-h1 {
-    font-size: 72px;
-    font-family: lato;
-}
 
-section {
+
+.section {
     background: blue;
     display: flex;
 }
+
+/*-----------Banner ------------ */
+
+.banner {
+    width: 100%
+    display: block;
+    object-fit: cover;
+    
+
+
+
+}
+
+.banner > .banner-image{
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    /* object-position: 50% 90%; */
+}
+.text-wrapper {
+    width: 100%;
+    position: absolute;
+    margin-top: -32%;
+    padding: 0 15% 0 15%;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 1rem;
+    color: white;
+
+} 
+
+
+/*----------- Summary ------------ */
+  
+
+
+
+#content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(22rem, 5rem); 
+    grid-gap: 2rem;
+    max-width: 100%;
+    height: 100%;
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+.item img {
+    max-width: 100%; 
+    box-shadow: -8px 8px 0px 0px grey;
+   
+}
+
+
+.grid-item {
+    background-color: #ddd;
+    
+}
+
+.grid-item-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.grid-item-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.grid-item-3 {
+    grid-column: 3/4;
+    grid-row:1/2;
+}
+
+.grid-item-3 > p {
+    font-size: 10rem;
+}
+
+/*-----------------Logo--------------------*/
+
+.oval-logo {
+    width: 300px;
+    height: 85px;
+    background: white;
+    border-radius: 50%;
+    border: 4px solid rgb(68, 240, 225);
+    color: rgb(68, 240, 225);
+    /* position: relative; */
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+
+
+.logo1 {
+    font-size: 35px; 
+    font-family: 'Marck Script', cursive;
+    color: rgb(68, 240, 225);
+    
+
+
+    /* position: relative; */
+}
+
+.logo2 {
+    font-family: sans-serif
+    font-size: 18px;
+    color: rgb(68, 240, 225); 
+    text-decoration: overline;
+    /* position: relative; */
+}
+
+
+.outer-log {
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.inner-logo {
+    
+    align-content: center;
+    justify-content: center;
+}
+
