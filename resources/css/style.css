@@ -8,123 +8,131 @@
     font-size: 10px;
 }
 
+/*-----------------Logo- Post-------------------*/
+
+
+.logo {
+    width: 425px;
+    height: 115px;
+    background: white;
+    border-radius: 50%;
+    border: 5px solid rgb(58, 214, 201);
+    color: rgb(58, 214, 201);
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 300px;
+    margin: 10px;
+
+ 
+  }
+
+
+
+.logo1 {
+    font-size: 35px; 
+    font-family: marck script, cursive;
+    color: rgb(58, 214, 201);
+    margin: auto;
+    position: relative;
+    margin-top: 0px;
+    
+    
+
+
+   
+}
+
+.logo2 {
+    font-family: sans-serif
+    color: rgb(58, 214, 201); 
+    text-decoration: underline;
+    /* text-underline-position: under; */
+    position: relative;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+
+
+     
+}
+
+
 
 
 
 /*--------------Navigation Menu --------------------------- */
+
 #main-nav {
-    position: sticky;
-    top: 0;
-    background: white;
-    z-index: 10;
-    width: 100%;
-    /* justify-content: spce-between; */
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
   
     
-    
+   
+
 }
 
 #main-nav a {
     color: black;
     background: white;
-    /* display: block; */
-    height: 64px;
-    width: auto;
+    width: 120px; /* allowed width from dropdown submenu to be inherited */
+    height: 64px; 
     font-family: lato;
     font-weight: bold;
+    display: block;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     text-decoration: none;
     transition: background 0.4s;
-    padding: 6px 10px 6px 10px;  
-}
-
-/* .arrow:nth-child(2) {
-    margin-right: 100px; */
+    /* padding: 6px 25px 6px 25px;  
+    margin: 0px 1px 0px 1px; */
+    
 
 }
 
 #main-nav a:hover {
-    background: lightgrey;
-
-    /* box-shadow: -5px 5px 5px 5px; */
-    padding-right: 5px;
-    /* width: 20px;
-    height: 20px; */
-    /* z-index: 15; */
-
-    
-    
+    background: rgb(189, 182, 182);
 
 }
 
 #main-nav ul {
     list-style: none;
     display: flex;
-  
-  
-
+    /* position: relative; */
 }
 
-#main-nav ul li {
-    width: 100%;
+#main-nav li {
     text-align: center;
-    position: relative;
-    /* height: 5rem; */
-   
-  
-  
+    position:6 relative;
 }
 
-#main-nav li:hover .submenu li {
-    display: block;
-    top: 0rem;
-    
-    
-    
-}
-.submenu  li{
-    display: none;
-    position: absolute;
+#main-nav li:hover .submenu > li {
     top: 0px;
-    
-}
+    display: block; 
+    z-index: 10;  
+} 
 
-.submenu {
+.submenu  li{
+    position: relative; /*absolute in tutorial */
+    top: 0px;
+    display: none;
+
+}.submenu {
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
 }
 
-.submenu li {
-    position: absolute;
-    
-
-}
 
 
-.submenu li:hover {
-    display: block;
-  
-    
-} 
-
-.arrow {
-
-    color: black;
-    font-size: 1rem;
-    padding-left: 8px;
-    
-}
-
-
-
-.section {
-    background: blue;
-    display: flex;
-}
 
 /*-----------Banner ------------ */
 
@@ -205,53 +213,114 @@
     font-size: 10rem;
 }
 
-/*-----------------Logo--------------------*/
+/*--------------MEDIA QUERIES ----------------*/
+
+
+
+@media screen and (max-width: 1420px){
+    #main-nav {
+        display: inline;
+        /* width: auto; */
+      
+        
+    }
+    
+    #main-nav a {
+        display: flex;
+        align-items: center;
+        /* justify-content: space-around; */
+    }
+    
+    
+    #main-nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .oval-logo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        /* height: 100vh; */
+    }
+
+
+
+@media screen and (max-width: 1280px){
+#main-nav {
+    display: inline;
+    /* width: auto; */
+  
+    
+}
+
+#main-nav a {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+
+#main-nav ul{
+    display: flex;
+    justify-content: space-around;
+}
 
 .oval-logo {
-    width: 300px;
-    height: 85px;
-    background: white;
-    border-radius: 50%;
-    border: 4px solid rgb(68, 240, 225);
-    color: rgb(68, 240, 225);
-    /* position: relative; */
     display: flex;
-    flex-flow: column wrap;
-    align-content: center;
     justify-content: center;
-    max-width: 100%;
-  }
+    text-align: center;
+    width: 100%;
+    /* height: 100vh; */
+}
 
-
-
-.logo1 {
-    font-size: 35px; 
-    font-family: 'Marck Script', cursive;
-    color: rgb(68, 240, 225);
+@media screen and (max-width: 992px){
+    #main-nav {
+        display: inline;
+        /* width: auto; */
+        
+      
+        
+    }
     
-
-
-    /* position: relative; */
-}
-
-.logo2 {
-    font-family: sans-serif
-    font-size: 18px;
-    color: rgb(68, 240, 225); 
-    text-decoration: overline;
-    /* position: relative; */
-}
-
-
-.outer-log {
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-.inner-logo {
+    #main-nav a {
+        display: flex;
+        align-items: center;
+        /* justify-content: space-around; */
+        /* background-color: grey; */
+        border-style: solid;
+        margin: 4px;
+    }
     
-    align-content: center;
-    justify-content: center;
+    
+    #main-nav ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .oval-logo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        /* height: 100vh; */
+    }
+
+
+    .text-wrapper {
+        margin-top: -235px
+    }
 }
 
+
+@media screen and (max-width: 410px){
+    .oval-logo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        /* height: 100vh; */
+    }
+}
