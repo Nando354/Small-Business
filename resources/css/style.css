@@ -25,7 +25,7 @@
     justify-content: center;
     max-width: 100%;
     min-width: 300px;
-    margin: 10px;
+    margin: 10px 20px 10px 40px;
 
  
   }
@@ -72,6 +72,9 @@
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
+    background: linear-gradient(to right, #ecf0ef 0%, #74a7b6 100%);
+    /* background-color: rgb(156, 204, 226); */
+    padding-right: 20px;
   
     
    
@@ -79,8 +82,9 @@
 }
 
 #main-nav a {
-    color: black;
-    background: white;
+    color: rgb(68, 66, 66);
+    /* background-color: rgb(229, 238, 241); */
+    /* background: rgb(203, 220, 228); */
     width: 120px; /* allowed width from dropdown submenu to be inherited */
     height: 64px; 
     font-family: lato;
@@ -93,12 +97,13 @@
     transition: background 0.4s;
     /* padding: 6px 25px 6px 25px;  
     margin: 0px 1px 0px 1px; */
-    
-
 }
 
 #main-nav a:hover {
-    background: rgb(189, 182, 182);
+
+    background-color: rgb(229, 238, 241);
+    /* background: rgb(181, 203, 228); */
+   
 
 }
 
@@ -106,6 +111,7 @@
     list-style: none;
     display: flex;
     /* position: relative; */
+    
 }
 
 #main-nav li {
@@ -117,14 +123,20 @@
     top: 0px;
     display: block; 
     z-index: 10;  
+    background-color: rgb(229, 238, 241);
+    width: 120px;
+
 } 
 
 .submenu  li{
     position: relative; /*absolute in tutorial */
     top: 0px;
     display: none;
+}
 
-}.submenu {
+
+
+.submenu {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -152,6 +164,7 @@
     object-fit: cover;
     display: block;
     /* object-position: 50% 90%; */
+    /* filter: blur(2px); */
 }
 .text-wrapper {
     width: 100%;
