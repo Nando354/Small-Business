@@ -103,8 +103,8 @@
 
     background-color: rgb(229, 238, 241);
     /* background: rgb(181, 203, 228); */
-   
-
+    /* transform: scale(1.2); */
+    color: rgb(4, 146, 134);
 }
 
 #main-nav ul {
@@ -117,6 +117,12 @@
 #main-nav li {
     text-align: center;
     position:6 relative;
+   
+
+}
+
+#main-nav li:hover {
+    background-color: rgb(229, 238, 241);
 }
 
 #main-nav li:hover .submenu > li {
@@ -127,6 +133,11 @@
     width: 120px;
 
 } 
+
+#main-nav li .arrow {
+    margin-right: 15px;
+    font-size: 14px;
+}
 
 .submenu  li{
     position: relative; /*absolute in tutorial */
