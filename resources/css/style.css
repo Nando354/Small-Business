@@ -102,7 +102,7 @@
 
 #main-nav a:hover {
 
-    background-color: rgb(229, 238, 241);
+    /* background-color: rgb(229, 238, 241); */
     /* background: rgb(181, 203, 228); */
     /* transform: scale(1.2); */
     color: rgb(4, 146, 134);
@@ -169,7 +169,7 @@
 
 }
 
-.estimate {
+.estimate a button{
   
     background-color: rgb(58, 214, 201);
     font-weight: 500;
