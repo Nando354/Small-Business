@@ -188,8 +188,9 @@
     cursor: pointer;
 }
 
-#main-nav h2, h3 {
+#main-nav h2, h3, h4 {
     position: relative;
+    padding: 2px;
 }
 
 
