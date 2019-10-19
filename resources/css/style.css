@@ -166,6 +166,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 140px;
 
 }
 
@@ -192,6 +193,7 @@
     position: relative;
     padding: 2px;
 }
+
 
 
 
@@ -230,7 +232,7 @@
 } 
 
 
-/*----------- Summary ------------ */
+/*----------- House Cleaning Content ------------ */
   
 
 
@@ -248,13 +250,14 @@
 .item img {
     max-width: 100%; 
     box-shadow: -8px 8px 0px 0px grey;
+    height: 100%;
+    display: block;
+    object-fit: conver;
    
 }
 
-
 .grid-item {
     background-color: #ddd;
-    
 }
 
 .grid-item-1 {
@@ -267,15 +270,48 @@
     grid-row: 1/2;
 }
 
+.grid-item-2 h2 {
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    display: flex;
+    margin: 25px;
+}
+
 .grid-item-3 {
     grid-column: 3/4;
     grid-row:1/2;
     
 }
 
-.grid-item-3 > p {
-    font-size: 10rem;
+.grid-item-4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
+
+.grid-item-4 >h2, .grid-item-4 >h4{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 25px;
+}
+
+.grid-item-4 p {
+    margin: 10px;
+}
+
+
+/*-------------Office Cleaning--------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
