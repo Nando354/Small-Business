@@ -252,8 +252,7 @@
     box-shadow: -8px 8px 0px 0px grey;
     height: 100%;
     display: block;
-    object-fit: conver;
-   
+    object-fit: cover;
 }
 
 .grid-item {
@@ -285,19 +284,24 @@
 }
 
 .grid-item-4 {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 2/3;
 }
 
-.grid-item-4 >h2, .grid-item-4 >h4{
+.grid-item-5 >h2, .grid-item-5 >h4{
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 25px;
 }
 
-.grid-item-4 p {
+.grid-item-5 p {
     margin: 10px;
+}
+
+.grid-item-6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
 }
 
 
