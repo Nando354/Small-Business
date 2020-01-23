@@ -170,7 +170,7 @@
 
 }
 
-.estimate a button{
+.estimate, button{
   
     background-color: rgb(58, 214, 201);
     font-weight: 500;
@@ -241,13 +241,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(22rem, 5rem); 
-    grid-gap: 2rem;
+    grid-gap: 4rem;
     max-width: 100%;
     height: 100%;
     margin: 2rem 2rem 0rem 2rem;
 }
 
-.item img {
+#content-grid >.item >img {
     max-width: 100%; 
     box-shadow: -8px 8px 0px 0px grey;
     height: 100%;
@@ -255,11 +255,11 @@
     object-fit: cover;
 }
 
-.grid-item{
+.grid-item-1 {
     background-color: #ddd;
 }
 
-.grid-item {
+.grid-item-1 {
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -275,6 +275,7 @@
     font-size: 25px;
     display: flex;
     margin: 25px;
+    margin-top: 80px;
 }
 
 .grid-item-3 {
@@ -286,22 +287,29 @@
 .grid-item-4 {
     grid-column: 1/2;
     grid-row: 2/3;
+    height: 50%;
+
+
 }
 
 .grid-item-5 >h2, .grid-item-5 >h4{
     align-items: center;
     justify-content: center;
+    font-size: 25px;
     display: flex;
     margin: 25px;
 }
 
 .grid-item-5 p {
+    grid-column: 2/3;
+    grid-row: 2/3;
     margin: 10px;
 }
 
 .grid-item-6 {
     grid-column: 3/4;
     grid-row: 2/3;
+    height: 50%;
 }
 
 
@@ -312,7 +320,8 @@
 #content-grid-office{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: minmax(22rem, 5rem); 
+    grid-template-rows: minmax(22rem, 20rem); 
+    
     grid-gap: 2rem;
     max-width: 100%;
     height: 100%;
@@ -320,9 +329,9 @@
 }
 
 
-.item img {
+#content-grid-office >.item >img {
     max-width: 100%; 
-    box-shadow: -8px 8px 0px 0px grey;
+    /* box-shadow: -8px 8px 0px 0px grey; */
     height: 100%;
     display: block;
     object-fit: cover;
@@ -333,55 +342,41 @@
 }
 
 .grid-item-a1 {
-    grid-column: 1/span5;
+    grid-column: 7/12;
     grid-row: 1/2;
 }
 
 .grid-item-a2 {
-    grid-column: 7/-1;
+    grid-column: 1/6;
     grid-row: 1/2;
 }
 
-/* .grid-item-a2 >h2 .grid-item-a2 >p {
-    
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    display: flex;
-    margin: 25px;
-} */
+
 
 .grid-item-a3 {
-    grid-column: 7/-1;
-    grid-row:2/3;
-    
+    grid-column: 1/6;
+    grid-row: 2/3; 
 }
 
 .grid-item-a4 {
-    /* grid-column: 5/-1;
-    grid-row: 2/3; */
-}
-
-.grid-item-a5 {
-    grid-column: 1/span 6;
+    grid-column: 7/12;
     grid-row:2/3;
     
 }
 
-.grid-item-a5 >h2, .grid-item-a5 >h4{
+.grid-item-a4 >h2, .grid-item-a4 >h3, .grid-item-a2 >h2 {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 25px;
+    margin: 5px;
+    
 }
 
-.grid-item-a5 p {
+.grid-item-a4 p, .grid-item-a2 >p {
     margin: 10px;
-}
+    line-height: 150%;
+} 
 
-.grid-item-a6 {
-    /* grid-column: 3/5;
-    grid-row: 2/3; */
 
 
 
