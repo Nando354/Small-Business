@@ -433,81 +433,61 @@
     margin: 5px;
     line-height: 150%;
 } 
-
-
-
 /*-------------Home Organizing--------------------*/
-
-
-
 #content-grid-org {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: minmax(22rem, 20rem); 
-    
-    grid-gap: 2rem;
+    grid-template-rows: minmax(22rem, 48rem); 
+    grid-gap: 4rem;
     max-width: 100%;
     height: 100%;
     margin: 2rem 2rem 0rem 2rem;
 }
-
-
 #content-grid-org .item {
     max-width: 100%; 
     /* box-shadow: -8px 8px 0px 0px grey; */
     height: 100%;
     display: block;
-    object-fit: cover;
-    
+    object-fit: cover; 
 }
-
 #content-grid-org img {
     box-shadow: -8px 8px 0px 0px grey;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
-
 .grid-item-b1 {
-    grid-column: 7/12;
+    grid-column: 7/13;
     grid-row: 1/2;
 }
-
 .grid-item-b2 {
-    grid-column: 1/6;
+    grid-column: 1/7;
     grid-row: 1/2;
-
+    margin: 0% 10% 0% 10%;
 }
-
-
-
 .grid-item-b3 {
-    grid-column: 1/6;
+    grid-column: 1/7;
     grid-row: 2/3; 
 }
-
 .grid-item-b4 {
-    grid-column: 7/12;
+    grid-column: 7/13;
     grid-row:2/3;
-    
+    margin: 0% 10% 0% 10%;
 }
-
-/* .grid-item-b4 >h2, .grid-item-b4 >h3, .grid-item-b2 >h2 {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 5px */
-
-    
-/* } */
-
+.grid-item-b2 h2, .grid-item-b4 h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+} 
+.grid-item-b2 p, .grid-item-b4 p{
+    font-size: 25px;
+} 
 #content-grid-org .grid-item-b2, #content-grid-org .grid-item-b4  {
-
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    
 }
-
-/* .grid-item-a4 p, .grid-item-a2 p { */
 .item p{
     margin: 5px;
     line-height: 150%;
@@ -638,18 +618,12 @@
     grid-column: 3/4;
     grid-row:1/2;
 }
-
-
-
 #content-grid-reviews .grid-item-d2  {
-
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    
 }
-
 /*-----Star Rates---*/
 .checked {
     color: orange;
@@ -658,14 +632,7 @@
 .unchecked {
     color: grey;
 }
-
-
-
-
-
 /*--------------Estimate---------------------*/
- 
-
 #content-grid-estimate {
     display: grid;
     grid-template-columns: 1fr;
@@ -677,25 +644,17 @@
     padding: 80px;
 
 }
-
-
-
 #content-grid-estimate h1 { 
     display: flex;
     align-items: center;
     justify-content: center;
     /* margin: 40px 0px 40px 0px; */
 }
-
-
-
 .grid-item-e1 {
     border-radius: 5px;
     background-color: #f5eded;
     padding: 40px;
   }
-
-
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -704,9 +663,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-   
 }
-  
 input[type=submit] {
     width: 100%;
     background-color: rgb(58, 214, 201);
@@ -717,14 +674,10 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 18px;
-  }
-  
+  } 
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  
-  
-
 /*-------------How It Works Section---------------*/
 
 #hiw-content-grid{
@@ -758,27 +711,17 @@ input[type=submit] {
     max-width: 100%;
     box-shadow: -8px 8px 0px 0px grey;
 }
-
-
-
-
 /**--------------MEDIA QUERIES 2560--------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
-
 @media screen and (min-width: 1440px) and (max-width: 2560px) and (orientation : landscape){
-
-
 /*------------House Cleaning--Media Queries 2560---------*/
-
     #content-grid img { 
         width: 528px; 
     }
-
     .contact {
         margin-bottom: 15px;
     }
-
 /*------------Office Cleaning--Media Queries 2560---------*/
     #content-grid-office {
         display: grid;
@@ -789,7 +732,6 @@ input[type=submit] {
         height: 100%;
         margin: 2rem 2rem 0rem 2rem;
     }
-
     #content-grid-office img {
         max-width: 100%; 
         box-shadow: -8px 8px 0px 0px grey;
@@ -799,35 +741,91 @@ input[type=submit] {
     }
     .grid-item-a2 {
         margin-bottom: 480px;
-    
     }
     .grid-item-a4 p {
         margin-left: 12%;
         font-size: 25px;
     }
-
     .grid-item-a2 p {
         font-size: 25px;
         margin-left: 5%;
     }
     .grid-item-a4 h2, .grid-item-a2 h2{
         margin: 10% 0 5% 0;
-        font-size: 40px;
+        font-size: 30px;
     }
+    /*------------Home Organizing--Media Queries 2560---------*/
+
+/* #content-grid-org {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(22rem, 20rem);   
+    grid-gap: 2em;
+    max-width: 100%;
+    height: 100%;
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+
+#content-grid-org .item {
+    max-width: 100%; 
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+
+#content-grid-org img {
+    box-shadow: -8px 8px 0px 0px grey;
+}
+
+.grid-item-b1 {
+    grid-column: 7/12;
+    grid-row: 1/2;
+}
+
+.grid-item-b2 {
+    grid-column: 1/6;
+    grid-row: 1/2;
 
 }
 
 
 
+.grid-item-b3 {
+    grid-column: 1/6;
+    grid-row: 2/3; 
+}
+
+.grid-item-b4 {
+    grid-column: 7/12;
+    grid-row:2/3;
+    
+} */
+/* 
 
 
+#content-grid-org .grid-item-b2, #content-grid-org .grid-item-b4  {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item p{
+    margin: 5px;
+    line-height: 150%;
+} 
+ */
+
+
+}
 /**--------------MEDIA QUERIES 1440--------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
-
-
 @media screen and (max-width: 1440px){
-
     /*-----------------Navigation Menu--Media Queries 1440----------------------*/
     #main-nav {
         display: block;
@@ -837,19 +835,15 @@ input[type=submit] {
         background: linear-gradient(to right, #ecf0ef 0%, #74a7b6 100%);
         /* padding-right: 20px; */
     }
-    
     #main-nav a {
         display: flex;
         align-items: center;
         /* justify-content: space-around; */
     }
-    
-    
     #main-nav ul{
         display: flex;
         justify-content: space-around;
     }
-    
     .oval-logo{
         display: flex;
         justify-content: center;
@@ -858,22 +852,17 @@ input[type=submit] {
         /* height: 100vh; */
         margin: auto;
     }
-
     .logo{
         margin: auto;
     }
-
     a {
         text-decoration: none;
     }
-
     /*------------House Cleaning--Media Queries 1440---------*/
 
     #content-grid p {
         font-size: 15px;
     }
-
-
     .grid-item-2 h2 {
         align-items: center;
         justify-content: center;
@@ -882,8 +871,6 @@ input[type=submit] {
         margin: 25px;
         margin-top: 80px;
     }
-
-
     .grid-item-5 h2, .grid-item-5 h4{
         align-items: center;
         justify-content: center;
@@ -891,8 +878,22 @@ input[type=submit] {
         display: flex;
         margin: 5px;
     }
-
 /*------------Office Cleaning--Media Queries 1440---------*/
+
+
+    .grid-item-a4 p {
+        margin-left: 12%;
+        font-size: 15px;
+    }
+
+    .grid-item-a2 p {
+        font-size: 15px;
+        margin-left: 5%;
+    }
+    .grid-item-a4 h2, .grid-item-a2 h2{
+        margin: 5% 0 5% 0;
+        font-size: 20px;
+    }
 
 /* 
 .grid-item-a1 {
@@ -1278,7 +1279,7 @@ input[type=submit] {
      #content-grid img{
         display: block;
         object-fit: fill;
-         height: 150px;
+        height: 150px;
      }
 
 
@@ -1323,7 +1324,9 @@ input[type=submit] {
     } */
 /*------------OFFICE CLEANING - Media Queries 768-----------------*/
 
-
+    .grid-item-a2 h2, .grid-item-a4 h2{
+        margin: 3px 0px 12px 0px;
+    }
     
 /*------------Media Queries 425-----------------*/
 /*----------------------------------------------*/
@@ -1372,17 +1375,11 @@ input[type=submit] {
         font-weight: bolder;
         padding: 0px 8px 0px 8px
     }
-
-
     .nav-list li a {
         padding: 10px;
         flex-basis: space-around;
         width: 100px;
     }
-
-
-
-
     contact-nav {
         margin: 0px 30px 0px 30px;
     }
@@ -1414,7 +1411,6 @@ input[type=submit] {
     .text-wrapper {
         margin-top: 20px
     }
-
     a {
         text-decoration: none;
     }
@@ -1424,11 +1420,13 @@ input[type=submit] {
         
 
     /*------------House Cleaning--Media Queries 425-------*/
+
+
     #content-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(8rem, 1fr); 
-        grid-gap: 6rem;
+        grid-template-rows: minmax(300px, 300px); 
+        grid-gap: 0rem;
         max-width: 100%;
         height: 100%;
         /* margin: 2rem 2rem 0rem 2rem; */
@@ -1437,16 +1435,16 @@ input[type=submit] {
     #content-grid img {
         max-width: 100%; 
         box-shadow: none;
-        /* height: 50%; */
+        height: 300px;
         display: block; 
-        object-fit: scale-down; 
+        object-fit: contain; 
+
     }
 
     .grid-item-1 {
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 1/2;  
     }
-
     .grid-item-2 {
         grid-column: 1/2;
         grid-row: 2/3;
@@ -1462,8 +1460,13 @@ input[type=submit] {
     }
 
     .grid-item-2 p, .grid-item-5 p {
-    padding-left: 20%;
-    margin-right: 0%;
+        /* padding-left: 0%;
+        margin-right: 0%;
+        display:flex;
+        align-items: center;
+        justify-content: center; */
+       
+        
     }
 
     .grid-item-3 {
@@ -1475,27 +1478,27 @@ input[type=submit] {
     .grid-item-4 {
         grid-column: 1/2;
         grid-row: 4/5;
-        
-
-
-
+        margin: 0px;
     }    
+
+    .grid-item-4 img{
+        margin: 0px;
+    }
+
     .grid-item-5 {
         grid-column: 1/2;
         grid-row: 5/6;
-    
-
-
-
     }    
     .grid-item-6 {
         grid-column: 1/2;
         grid-row: 6/7;
-        
-
-
-
+        height: 300px;
+        width: 100%;
+        margin: 0px
     }    
+    .grid-item-6 img{
+        margin: 0px;
+    }
 
 
     .grid-item-2 h2 {
@@ -1503,7 +1506,7 @@ input[type=submit] {
         justify-content: center;
         font-size: 20px;
         display: flex;
-        /* margin: 10px 0px 10px 0px; */
+        margin: 10px 0px 10px 0px;
         max-width: 100%;
         
 }
@@ -1514,77 +1517,62 @@ input[type=submit] {
         justify-content: center;
         font-size: 15px;
         display: flex;
-        /* margin: 5px; */
         max-width: 100%;
+        margin-bottom: 5px;
     }
 
     .item p {
-        margin: 5px;
         line-height: 110%;
-        max-width: 80%;
+        max-width: 100%;
     } 
-
-
     /*---------Office Cleaning--Media Queries 425-------------*/
-
-
     #content-grid-office{
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: minmax(2rem, 1fr); 
-        grid-gap: 2rem;
+        grid-gap: 1rem;
         max-width: 100%;
         height: 100%;
         margin: 2rem 2rem 0rem 2rem;
     }
-
     .grid-item-a1 {
         grid-column: 1/11;
         grid-row: 2/3;
     }
-    
     .grid-item-a1 img {
-        width: 100%;
-       
+        width: 100%; 
+        margin-top: 10px;
     }
-    
     .grid-item-a2 {
         grid-column: 1/11;
         grid-row: 1/2;
         height: 20px;
         margin-bottom: 25px;
-    
     }
-    
     .grid-item-a3 {
         grid-column: 1/11;
         grid-row: 3/4; 
     }
-    
     .grid-item-a3 img {
         width: 100%;
         /* margin-top: 10%; */
     }
-    
     .grid-item-a4 {
         grid-column: 1/11;
         grid-row:4/5;
-        Margin: 0% 10% 10% 10%;
-        
+        margin: 0% 5% 10% 5%;  
     }
-    
     .grid-item-a4 >h2, .grid-item-a4 >h3, .grid-item-a2 >h2 {
         align-items: center;
         justify-content: center;
         display: flex;
         margin: 5px
-    
-        
     }
-    
-
+    .grid-item-a2 p, .grid-item-a4 p{
+        max-width: none;
+        margin: 0% 10% 10% %;
+    }
     /*---------Estimate Page--Media Queries 425-------------*/
-
     #content-grid-estimate {
         padding: 15px;
         margin: 15px;
@@ -1602,6 +1590,25 @@ input[type=submit] {
 
 @media screen and (max-width: 320px){
 
+/*---------Office Cleaning--Media Queries 320-------------*/
+
+
+    #content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(200px, 260px); 
+        grid-gap: 0rem;
+        max-width: 100%;
+        height: 100%;
+        /* margin: 2rem 2rem 0rem 2rem; */
+    }
+
+    #content-grid-office img{
+        display: block;
+        object-fit: contain;
+        height: 50%;
+        width: 100%;
+     }
 
     .text-wrapper {
         margin-top: 10px
