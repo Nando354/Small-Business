@@ -441,15 +441,15 @@
     grid-gap: 4rem;
     max-width: 100%;
     height: 100%;
-    margin: 2rem 2rem 0rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
 }
-#content-grid-org .item {
+/* #content-grid-org .item {
     max-width: 100%; 
     /* box-shadow: -8px 8px 0px 0px grey; */
-    height: 100%;
+  /*  height: 100%;
     display: block;
     object-fit: cover; 
-}
+} */
 #content-grid-org img {
     box-shadow: -8px 8px 0px 0px grey;
     display: block;
@@ -882,7 +882,28 @@ input[type=submit] {
 
 
  */
+ 
+/*------------Home Organizing--Media Queries 1440---------*/
 
+#content-grid-org {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(22rem, 22rem); 
+    grid-gap: 2rem;
+    max-width: 100%;
+    height: 100%;
+    margin: 2rem 2rem 2rem 2rem;
+}
+.grid-item-b2 h2, .grid-item-b4 h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+} 
+.grid-item-b2 p, .grid-item-b4 p{
+    font-size: 15px;
+} 
+.grid-item-b3 {
+    height: 352px;
+}
 
 
 /*------------Media Queries 1200-----------------*/
@@ -1330,7 +1351,6 @@ input[type=submit] {
         margin-right: 40px;
         padding-right: 0px;
     }
-    
     /*----banner-------*/
     .text-wrapper {
         width: 100%;
@@ -1341,24 +1361,14 @@ input[type=submit] {
         font-family: 'Playfair Display SC', serif;
         font-size: 8px;
         color: rgb(245, 247, 250);
-        
     } 
-
-
     .text-wrapper {
         margin-top: 20px
     }
     a {
         text-decoration: none;
     }
-
-
-    
-        
-
     /*------------House Cleaning--Media Queries 425-------*/
-
-
     #content-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -1368,16 +1378,13 @@ input[type=submit] {
         height: 100%;
         /* margin: 2rem 2rem 0rem 2rem; */
     }
-
     #content-grid img {
         max-width: 100%; 
         box-shadow: none;
         height: 300px;
         display: block; 
         object-fit: contain; 
-
     }
-
     .grid-item-1 {
         grid-column: 1/2;
         grid-row: 1/2;  
@@ -1386,42 +1393,33 @@ input[type=submit] {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-
     .grid-item-2 h2 {
         align-items: center;
         justify-content: center;
-        font-size: 25px;
+        font-size: 20px;
         display: flex;
         /* margin: 25px; */
         /* margin-top: 80px; */
     }
-
     .grid-item-2 p, .grid-item-5 p {
         /* padding-left: 0%;
         margin-right: 0%;
         display:flex;
         align-items: center;
-        justify-content: center; */
-       
-        
+        justify-content: center; */   
     }
-
     .grid-item-3 {
         grid-column: 1/2;
-        grid-row:3/4;
-        
+        grid-row:3/4;   
     }
-
     .grid-item-4 {
         grid-column: 1/2;
         grid-row: 4/5;
         margin: 0px;
     }    
-
     .grid-item-4 img{
         margin: 0px;
     }
-
     .grid-item-5 {
         grid-column: 1/2;
         grid-row: 5/6;
@@ -1436,28 +1434,22 @@ input[type=submit] {
     .grid-item-6 img{
         margin: 0px;
     }
-
-
     .grid-item-2 h2 {
         align-items: center;
         justify-content: center;
         font-size: 20px;
         display: flex;
         margin: 10px 0px 10px 0px;
-        max-width: 100%;
-        
-}
-
-
+        max-width: 100%;   
+    }
     .grid-item-5 h2, .grid-item-5 h4{
         align-items: center;
         justify-content: center;
-        font-size: 15px;
+        font-size: 20px;
         display: flex;
         max-width: 100%;
         margin-bottom: 5px;
     }
-
     .item p {
         line-height: 110%;
         max-width: 100%;
@@ -1509,27 +1501,56 @@ input[type=submit] {
         max-width: none;
         margin: 0% 10% 10% %;
     }
+
+    /*------------Home Organinzing--Media Queries 425-------*/
+    #content-grid-org {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: minmax(11rem, 16rem); 
+        grid-gap: 1rem;
+        max-width: 100%;
+        height: 100%;
+        margin: 2rem 2rem 2rem 2rem;
+    }
+    .grid-item-b1 {
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
+    .grid-item-b1 img {
+        width: 100%; 
+        margin-top: 10px;
+    }
+    .grid-item-b2 {
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
+    .grid-item-b3 {
+        grid-column: 1/13;
+        grid-row: 3/4; 
+    }
+    .grid-item-b3 img {
+        width: 100%;
+    }
+    .grid-item-b4 {
+        grid-column: 1/13;
+        grid-row:4/5;
+        margin: 10% 5% 10% 5%;  
+    }
     /*---------Estimate Page--Media Queries 425-------------*/
     #content-grid-estimate {
         padding: 15px;
         margin: 15px;
         grid-gap: 2rem;
     }
-
     .grid-item-e1 {
         border-radius: 5px;
         background-color: #f5eded;
         padding: 15px;
         width: 300px;
     }
-
 }
-
 @media screen and (max-width: 320px){
-
 /*---------Office Cleaning--Media Queries 320-------------*/
-
-
     #content-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -1539,24 +1560,21 @@ input[type=submit] {
         height: 100%;
         /* margin: 2rem 2rem 0rem 2rem; */
     }
-
     #content-grid-office img{
         display: block;
         object-fit: contain;
         height: 50%;
         width: 100%;
      }
-
     .text-wrapper {
         margin-top: 10px
     }
-
-
+/*---------Home Organizing--Media Queries 320-------------*/
+    .grid-item-b4 h2 {
+        padding-left: 50px;
+    }
 }
-
     /*----all------*/
-
-
     .item p {
         margin: 5px;
         line-height: 110%;
