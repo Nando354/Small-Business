@@ -88,14 +88,14 @@
 
 
 /*-----------Main Nav Stars---------------------*/
-.star-container {
-    width: 100%;
-    height: 40%;
+/* .sky-container {
+    width: 10%;
+    height: 10%;
     /* background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%); */
     /* clip-path: circle(50% at 50% 50%); */
     /* border-radius: 50%; */
     /* transform: rotateZ(45deg); */
-  }
+  /* }  */
 
 .star {
     position: absolute;
@@ -122,10 +122,10 @@
   .star::after {
     transform: translateX(50%) rotateZ(-45deg); /*degree of star*/
   }
-  
+
   .star:nth-child(1) {
-    top: calc(7% - 20px);
-    left: calc(21% - 30px);
+    top: calc(5% - 10px);
+    left: calc(35% - 30px);
     animation-delay: 650ms;
   }
   .star:nth-child(1)::before, .star:nth-child(1)::after {
@@ -133,8 +133,8 @@
   }
   
   .star:nth-child(2) {
-    top: calc(22% - -50px);
-    left: calc(15% - 190px);
+    top: calc(6% - 50px);
+    left: calc(36% - 90px);
     animation-delay: 150ms;
   }
   .star:nth-child(2)::before, .star:nth-child(2)::after {
@@ -142,8 +142,8 @@
   }
   
   .star:nth-child(3) {
-    top: calc(10% - -90px);
-    left: calc(28% - 200px);
+    top: calc(14% - 90px);
+    left: calc(37% - 100px);
     animation-delay: 1600ms;
   }
   .star:nth-child(3)::before, .star:nth-child(3)::after {
@@ -151,8 +151,8 @@
   }
   
   .star:nth-child(4) {
-    top: calc(15% - 50px);
-    left: calc(30% - 250px);
+    top: calc(8% - 50px);
+    left: calc(34% - 250px);
     animation-delay: 4700ms;
   }
   .star:nth-child(4)::before, .star:nth-child(4)::after {
@@ -160,16 +160,16 @@
   }
   
   .star:nth-child(5) {
-    top: calc(5% - -190px);
-    left: calc(50% - 200px);
+    top: calc(9% - 70px);
+    left: calc(33% - 60px);
     animation-delay: 2100ms;
   }
   .star:nth-child(5)::before, .star:nth-child(5)::after {
     animation-delay: 2100ms;
   } 
   .star:nth-child(6) {
-    top: calc(22% - 20px);
-    left: calc(35% - 30px);
+    top: calc(10% - 20px);
+    left: calc(32% - 30px);
     animation-delay: 650ms;
   }
   .star:nth-child(6)::before, .star:nth-child(1)::after {
@@ -177,17 +177,17 @@
   }
   
   .star:nth-child(7) {
-    top: calc(8% - -50px);
-    left: calc(75% - 190px);
-    animation-delay: 150ms;
+    top: calc(11% - 50px);
+    left: calc(27% - 190px);
+    animation-delay: 250ms;
   }
   .star:nth-child(7)::before, .star:nth-child(2)::after {
     animation-delay: 150ms;
   }
   
   .star:nth-child(8) {
-    top: calc(13% - -90px);
-    left: calc(65% - 200px);
+    top: calc(9% - 40px);
+    left: calc(33% - 200px);
     animation-delay: 1600ms;
   }
   .star:nth-child(8)::before, .star:nth-child(3)::after {
@@ -195,8 +195,8 @@
   }
   
   .star:nth-child(9) {
-    top: calc(18% - 50px);
-    left: calc(80% - 250px);
+    top: calc(8% - 50px);
+    left: calc(30% - 250px);
     animation-delay: 4700ms;
   }
   .star:nth-child(9)::before, .star:nth-child(4)::after {
@@ -204,13 +204,14 @@
   }
   
   .star:nth-child(10) {
-    top: calc(6% - -190px);
-    left: calc(85% - 200px);
+    top: calc(7% - 90px);
+    left: calc(29% - 20px);
     animation-delay: 2100ms;
   }
   .star:nth-child(10)::before, .star:nth-child(5)::after {
     animation-delay: 2100ms;
   } 
+  
   
    
   
@@ -367,6 +368,15 @@
 
 .estimate:hover{
     background-color: rgb(4, 146, 134);
+}
+.footer-section h2 {
+    color: rgb(218, 56, 28);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
@@ -853,6 +863,8 @@ input[type=submit]:hover {
     a {
         text-decoration: none;
     }
+
+    
 }
 
 /**--------------MEDIA QUERIES 1440--------------*/
@@ -889,6 +901,98 @@ input[type=submit]:hover {
     a {
         text-decoration: none;
     }
+
+
+
+  .star:nth-child(1) {
+    top: calc(20% - 10px);
+    left: calc(21% - 30px);
+    animation-delay: 650ms;
+  }
+  .star:nth-child(1)::before, .star:nth-child(1)::after {
+    animation-delay: 650ms;
+  }
+  
+  .star:nth-child(2) {
+    top: calc(21% - 50px);
+    left: calc(25% - 90px);
+    animation-delay: 150ms;
+  }
+  .star:nth-child(2)::before, .star:nth-child(2)::after {
+    animation-delay: 150ms;
+  }
+  
+  .star:nth-child(3) {
+    top: calc(20% - 90px);
+    left: calc(28% - 100px);
+    animation-delay: 1600ms;
+  }
+  .star:nth-child(3)::before, .star:nth-child(3)::after {
+    animation-delay: 1600ms;
+  }
+  
+  .star:nth-child(4) {
+    top: calc(21% - 50px);
+    left: calc(30% - 250px);
+    animation-delay: 4700ms;
+  }
+  .star:nth-child(4)::before, .star:nth-child(4)::after {
+    animation-delay: 4700ms;
+  }
+  
+  .star:nth-child(5) {
+    top: calc(28% - 70px);
+    left: calc(20% - 60px);
+    animation-delay: 2100ms;
+  }
+  .star:nth-child(5)::before, .star:nth-child(5)::after {
+    animation-delay: 2100ms;
+  } 
+  .star:nth-child(6) {
+    top: calc(17% - 20px);
+    left: calc(15% - 30px);
+    animation-delay: 650ms;
+  }
+  .star:nth-child(6)::before, .star:nth-child(1)::after {
+    animation-delay: 650ms;
+  }
+  
+  .star:nth-child(7) {
+    top: calc(13% - 60px);
+    left: calc(35% - 260px);
+    animation-delay: 250ms;
+  }
+  .star:nth-child(7)::before, .star:nth-child(2)::after {
+    animation-delay: 150ms;x
+  }
+  
+  .star:nth-child(8) {
+    top: calc(14% - 60px);
+    left: calc(28% - 200px);
+    animation-delay: 1600ms;
+  }
+  .star:nth-child(8)::before, .star:nth-child(3)::after {
+    animation-delay: 1600ms;
+  }
+  
+  .star:nth-child(9) {
+    top: calc(22% - 60px);
+    left: calc(24% - 250px);
+    animation-delay: 4700ms;
+  }
+  .star:nth-child(9)::before, .star:nth-child(4)::after {
+    animation-delay: 4700ms;
+  }
+  
+  .star:nth-child(10) {
+    top: calc(22% - 90px);
+    left: calc(18% - 20px);
+    animation-delay: 2100ms;
+  }
+  .star:nth-child(10)::before, .star:nth-child(5)::after {
+    animation-delay: 2100ms;
+  } 
+  
     /*------------House Cleaning--Media Queries 1440---------*/
     .grid-item-1, .grid-item-3, .grid-item-4, .grid-item-6{
         height: 360px;
@@ -1341,6 +1445,18 @@ input[type=submit]:hover {
     a {
         text-decoration: none;
     }
+
+    .star {
+        animation: none !important;
+      }
+    .star::before, .star::after {
+        animation: none !important;
+      }
+    .star::after {
+        transform: translateX(50%) rotateZ(-45deg); /*degree of star*/
+      }
+
+    
     /*------------House Cleaning--Media Queries 425-------*/
     #content-grid {
         display: grid;
