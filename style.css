@@ -1463,7 +1463,6 @@ input[type=submit]:hover {
     .grid-item-a4 {
         grid-column: 1/11;
         grid-row:4/5;
-        padding-top: 40px;
         /* margin: 0% 5% 10% 5%;   */
     }
     .grid-item-a4 >h2, .grid-item-a2 >h2 {
@@ -1620,11 +1619,8 @@ input[type=submit]:hover {
         margin-top: 10px
     } */
     /*---------Home Organizing--Media Queries 320-------------*/
-    /* .grid-item-b4 h2 {
+    .grid-item-b4 h2 {
         padding-left: 50px;
-    } */
-    .grid-item-b2{
-        margin: 40px 0px 40px 0px;
     }
 }
     /*----all------*/
