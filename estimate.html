@@ -81,71 +81,58 @@
     
     <section class="contact-nav">
         <div class="contact">
-          <!-- <a href="estimate.html"><button class="estimate">Request an Estimate</button></a> -->
+          <a href="estimate.html"><button class="estimate">Request an Estimate</button></a>
           <h2>Call Now</h2>
           <h3>914-844-6357</h3>
           <h3>Serving NY & CT</h3>
+          <a href = "mailto:cleanwithjenny@gmail.com?subject = Feedback&body = Message">
+            Cleanwithjenny@gmail.com</a>
         </div>
     </section>
     
   </ul>         
 </nav> 
-<!-----------------Estimate Section--------------->
+<!-----------------Estimate Section - Contact Form--------------->
 
 <main>
-  <!-- <div id="content-grid-estimate">
-  <h1>Estimate</h1>
-
+  <div id="content-grid-estimate">
+    <h1>Request an Estimate</h1>
     <div class="grid-item-e1 item">
-      
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" name="phone" placeholder="Your phone number..">
-
-        <label for="address">Address</label>
-        <input type="text" id="address" name="address" placeholder="Your address..">
-
-
-        <label for="state">Service Needed</label>
-        <select id="state" name="state">
-          <option value="house-cleaning">House Cleaning</option>
-          <option value="organizing">Organizing</option>
-          <option value="office-cleaning">Office Cleaning</option>
-        </select>
-      
-        <input type="submit" value="Submit">
+      <form
+        action="https://formspree.io/fernandoaguirre354@gmail.com"
+        method="POST">
+      <label for="clientEmail">
+        Your Email Address:
+        <input type="text" name="_replyto">
+      </label>
+      <label for="clientPhone">
+        Your Phone Number:
+        <input type="text" name="phone">
+      </label>
+      <label for="clientAddress">
+        Address:
+        <input type="text" name="address">
+      </label>
+      <label for="clientCity">
+        City:
+        <input type="text" name="city">
+      </label>
+      <label for="clientState">
+        State:
+        <input type="text" name="state">
+      </label>
+      <label for="clientZip">
+        Zip Code:
+        <input type="text" name="zipCode">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">Send</button>
       </form>
     </div>
-  </div> -->
-
-<!-----------------Contact Form--------------->
-<form
-  action="https://formspree.io/maydynpj"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-
-  <!-- your other form fields go here -->
-
-  <button type="submit">Send</button>
-</form>
-  
-
+  </div>
 </main>
-
-</body>
-  
+</body> 
 </html>

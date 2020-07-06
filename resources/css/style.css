@@ -284,6 +284,8 @@
     font-size: 18px;
 }
 
+/*--Estimate Button on all Pages--*/
+
 .estimate {
     background-color: rgb(58, 214, 201);
     font-weight: 500;
@@ -305,6 +307,7 @@
 .estimate:hover{
     background-color: rgb(4, 146, 134);
 }
+/*--------------------*/
 
 .footer-section h2 {
     color: rgb(218, 56, 28);
@@ -702,7 +705,7 @@
 .unchecked {
     color: grey;
 }
-/*--------------Estimate---------------------*/
+/*--------------Estimate - Contact Form via Formspree---------------------*/
 #content-grid-estimate {
     display: grid;
     grid-template-columns: 1fr;
@@ -720,32 +723,60 @@
 }
 .grid-item-e1 {
     border-radius: 5px;
-    background-color: #f5eded;
+    background-color: #e5e7debe;
     padding: 40px;
+    font-size: 20px;
 }
-input[type=text], select {
+
+input[type=text] {
+    width: 40%;
+    display: block;
+    margin: 10px 0px 20px 0px;
+    font-size: 18px;
+}
+
+input[name=address], input[name=city], input[name=state] { 
+    display: block;
+    margin: 1px 0px 5px 0px;
+    padding: 0px;
+}
+
+input[name=zipCode] {
+    display: block;
+    margin: 1px 0px 20px 0px;
+    padding: 0px;
+}
+
+textarea[name=message] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    min-height: 200px;
+    padding: 5px;
+    display: block;
+    margin: 10px 0px 20px 0px;
+    font-size: 18px;
 }
-input[type=submit] {
-width: 100%;
-background-color: rgb(58, 214, 201);
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-font-size: 18px;
+
+/*------Send Button - Estimate Contact Form----*/
+button[type=submit] {
+    font-size: 18px; 
+    background-color: rgb(71, 187, 177);
+    color: #FFFFFF;
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
 } 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+button[type=submit]:hover {
+        background-color: #088a8f;
+} 
+
+
 /*-------------How It Works Section---------------*/
 #hiw-content-grid{
     display: grid;
@@ -1241,6 +1272,12 @@ input[type=submit]:hover {
         margin: 2rem 2rem 2rem 2rem;    
     }
 
+    input[type=text] {
+        width: 100%;
+        display: block;
+        font-size: 18px;
+    }
+   
     /*------------About - Media Queries 768-----------------*/
     .grid-item-c2 h2 {
         font-size: 20px;
@@ -1542,15 +1579,15 @@ input[type=submit]:hover {
         grid-row:3/4;
     }
     /*---------Estimate Page--Media Queries 425-------------*/
-    #content-grid-estimate {
+    /* #content-grid-estimate {
         padding: 0px;
         margin: 5px;
         grid-gap: 0rem;
     }
     #content-grid-estimate h1{
         margin-top: 15px;
-    }
-    .grid-item-e1 {
+    } */
+    /* .grid-item-e1 {
         border-radius: 5px;
         background-color: #f5eded;
         padding: 15px;
@@ -1558,6 +1595,14 @@ input[type=submit]:hover {
         align-items: center;
         justify-content: center;
         display: flex;
+    }  */
+
+    .grid-item-e1 {
+        padding: 10px;
+    }
+
+    #content-grid-estimate {
+        margin: 2rem 1rem 2rem 1rem;
     }
     /*---------Reviews--Media Queries 425-------------*/
     .content-grid-reviews h1{
@@ -1626,6 +1671,7 @@ input[type=submit]:hover {
     .grid-item-b2{
         margin: 40px 0px 40px 0px;
     }
+   
 }
     /*----all------*/
 
