@@ -71,171 +71,6 @@
     font-family: inherit;
 }
 
-/* a#email-link[id="email-link"] {
-    font-size: 18px !important;
-} */
-
-/*-----------Main Nav Stars---------------------*/
-/* .star {
-    position: absolute;
-    top: 2%;
-    left: 0%;
-    height: 4px;
-    background: linear-gradient(-45deg, #f0f2f7, rgba(236, 46, 12, 0));
-    filter: drop-shadow(0 0 6px #f4f5f8);
-    animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
-}
-
-.star::before, .star::after {
-    position: absolute;
-    content: '';
-    top: calc(50% - 1px);
-    right: 0;
-    height: 1px;
-    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5fe7ff, rgba(0, 0, 255, 0));
-    border-radius: 100%;
-    transform: translateX(50%) rotateZ(45deg);
-    animation: shining 3000ms ease-in-out infinite;
-}
-
-.star::after {
-    transform: translateX(50%) rotateZ(-45deg); /*degree of star*/
-/* }
-
-.star:nth-child(1) {
-    top: calc(5% - 10px);
-    left: calc(35% - 30px);
-    animation-delay: 650ms;
-}
-
-.star:nth-child(1)::before, .star:nth-child(1)::after {
-    animation-delay: 650ms;
-} 
-
-.star:nth-child(2) {
-    top: calc(6% - 50px);
-    left: calc(36% - 90px);
-    animation-delay: 150ms;
-}
-
-.star:nth-child(2)::before, .star:nth-child(2)::after {
-    animation-delay: 150ms;
-}
-
-.star:nth-child(3) {
-    top: calc(14% - 90px);
-    left: calc(37% - 100px);
-    animation-delay: 1600ms;
-}
-
-.star:nth-child(3)::before, .star:nth-child(3)::after {
-    animation-delay: 1600ms;
-}
-
-.star:nth-child(4) {
-    top: calc(8% - 50px);
-    left: calc(34% - 250px);
-    animation-delay: 4700ms;
-}
-
-.star:nth-child(4)::before, .star:nth-child(4)::after {
-    animation-delay: 4700ms;
-}
-
-.star:nth-child(5) {
-    top: calc(9% - 70px);
-    left: calc(33% - 60px);
-    animation-delay: 2100ms;
-}
-
-.star:nth-child(5)::before, .star:nth-child(5)::after {
-    animation-delay: 2100ms;
-} 
-
-.star:nth-child(6) {
-    top: calc(10% - 20px);
-    left: calc(32% - 30px);
-    animation-delay: 650ms;
-}
-
-.star:nth-child(6)::before, .star:nth-child(1)::after {
-    animation-delay: 650ms;
-}
-
-.star:nth-child(7) {
-    top: calc(11% - 50px);
-    left: calc(27% - 190px);
-    animation-delay: 250ms;
-}
-
-.star:nth-child(7)::before, .star:nth-child(2)::after {
-    animation-delay: 150ms;
-}
-
-.star:nth-child(8) {
-    top: calc(9% - 40px);
-    left: calc(33% - 200px);
-    animation-delay: 1600ms;
-}
-
-.star:nth-child(8)::before, .star:nth-child(3)::after {
-    animation-delay: 1600ms;
-}
-
-.star:nth-child(9) {
-    top: calc(8% - 50px);
-    left: calc(30% - 250px);
-    animation-delay: 4700ms;
-}
-
-.star:nth-child(9)::before, .star:nth-child(4)::after {
-    animation-delay: 4700ms;
-}
-
-.star:nth-child(10) {
-    top: calc(7% - 90px);
-    left: calc(29% - 20px);
-    animation-delay: 2100ms;
-}
-
-.star:nth-child(10)::before, .star:nth-child(5)::after {
-    animation-delay: 2100ms;
-} 
-
-  /* Animations */
-  /* @keyframes tail {
-    0% {
-      width: 0;
-    }
-    30% {
-      width: 100px;
-    }
-    100% {
-      width: 0;
-    }
-  }
-
-  @keyframes shining {
-    0% {
-      width: 0;
-    }
-    50% {
-      width: 30px;
-    }
-    100% {
-      width: 0;
-    }
-  } */
-
-  /* @keyframes shooting {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(320px);
-    } 
-  } */ 
-
 .nav-list li a {
     flex-basis: 100px;
     color: rgb(92, 87, 87);
@@ -391,7 +226,7 @@
 
 #content-grid img {
     max-width: 100%; 
-    box-shadow: -8px 8px 0px 0px grey;
+    box-shadow: -8px 8px 0px 0px lightgrey;
     height: 100%;
     display: block;
     object-fit: cover;
@@ -482,7 +317,7 @@
 }
 
 #content-grid-office img {
-    box-shadow: -8px 8px 0px 0px grey;
+    box-shadow: -8px 8px 0px 0px lightgrey;
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -563,7 +398,7 @@
 }
 
 #content-grid-org img {
-    box-shadow: -8px 8px 0px 0px grey;
+    box-shadow: -8px 8px 0px 0px lightgrey;
     display: block;
     object-fit: cover;
     width: 100%;
@@ -620,7 +455,7 @@
 
 #content-grid img {
     /* max-width: 100%;  */
-    box-shadow: -8px 8px 0px 0px grey;
+    box-shadow: -8px 8px 0px 0px lightgrey;
     height: 100%;
     display: block;
     object-fit: cover;
@@ -783,9 +618,6 @@ textarea[name=message] {
     border-color: lightgray;
     border-radius: 5px;
     border: 1px solid #d3d3d3;
-    /* box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); */
-    /* border-top: 2px solid #9e9d9d;    /* Dark top border (adjust color/thickness as desired) */
-    /* border-left: 2px solid #9e9d9d; */ */
     border-top: none;
     box-shadow: none;
 }
@@ -838,7 +670,7 @@ button[type=submit]:hover {
     grid-column: 1/2;
     grid-row: 1/3;
     max-width: 100%;
-    box-shadow: -8px 8px 0px 0px grey;
+    box-shadow: -8px 8px 0px 0px lightgrey;
 }
 
 /**--------------MEDIA QUERIES 2560--------------*/
@@ -916,98 +748,6 @@ button[type=submit]:hover {
     a{
         text-decoration: none;
     }
-
-    /*----------------Star Animation 1440--------------*/
-/* 
-    .star:nth-child(1) {
-        top: calc(20% - 10px);
-        left: calc(21% - 30px);
-        animation-delay: 650ms;
-    }
-    .star:nth-child(1)::before, .star:nth-child(1)::after {
-        animation-delay: 650ms;
-    }
-    
-    .star:nth-child(2) {
-        top: calc(21% - 50px);
-        left: calc(25% - 90px);
-        animation-delay: 150ms;
-    }
-    .star:nth-child(2)::before, .star:nth-child(2)::after {
-        animation-delay: 150ms;
-    }
-    
-    .star:nth-child(3) {
-        top: calc(20% - 90px);
-        left: calc(28% - 100px);
-        animation-delay: 1600ms;
-    }
-    .star:nth-child(3)::before, .star:nth-child(3)::after {
-        animation-delay: 1600ms;
-    }
-    
-    .star:nth-child(4) {
-        top: calc(21% - 50px);
-        left: calc(30% - 250px);
-        animation-delay: 4700ms;
-    }
-    .star:nth-child(4)::before, .star:nth-child(4)::after {
-        animation-delay: 4700ms;
-    }
-    
-    .star:nth-child(5) {
-        top: calc(28% - 70px);
-        left: calc(20% - 60px);
-        animation-delay: 2100ms;
-    }
-    .star:nth-child(5)::before, .star:nth-child(5)::after {
-        animation-delay: 2100ms;
-    } 
-    .star:nth-child(6) {
-        top: calc(17% - 20px);
-        left: calc(15% - 30px);
-        animation-delay: 650ms;
-    }
-    .star:nth-child(6)::before, .star:nth-child(1)::after {
-        animation-delay: 650ms;
-    }
-    
-    .star:nth-child(7) {
-        top: calc(13% - 60px);
-        left: calc(35% - 260px);
-        animation-delay: 250ms;
-    }
-    .star:nth-child(7)::before, .star:nth-child(2)::after {
-        animation-delay: 150ms;x
-    }
-    
-    .star:nth-child(8) {
-        top: calc(14% - 60px);
-        left: calc(28% - 200px);
-        animation-delay: 1600ms;
-    }
-    .star:nth-child(8)::before, .star:nth-child(3)::after {
-        animation-delay: 1600ms;
-    }
-    
-    .star:nth-child(9) {
-        top: calc(22% - 60px);
-        left: calc(24% - 250px);
-        animation-delay: 4700ms;
-    }
-    .star:nth-child(9)::before, .star:nth-child(4)::after {
-        animation-delay: 4700ms;
-    }
-    
-    .star:nth-child(10) {
-        top: calc(22% - 90px);
-        left: calc(18% - 20px);
-        animation-delay: 2100ms;
-    }
-    .star:nth-child(10)::before, .star:nth-child(5)::after {
-        animation-delay: 2100ms;
-    } 
-   */
     /*------------House Cleaning--Media Queries 1440---------*/
     .grid-item-1, .grid-item-3, .grid-item-4, .grid-item-6{
         height: 360px;
@@ -1126,7 +866,7 @@ button[type=submit]:hover {
         display: flex;
         flex-direction: column;
     } 
-/*------------OFFICE CLEANING - Media Queries 1280-----------------*/
+    /*------------OFFICE CLEANING - Media Queries 1280-----------------*/
     .grid-item-a4 {
         justify-content: top;
     }
@@ -1175,12 +915,13 @@ button[type=submit]:hover {
     .contact {
         margin-right: 10px;
     }
+
     #email-link {
         font-size: 12px !important;
         font-family: inherit;
         padding: 0px !important;
     }
-    
+}  
     
 /*------------Media Queries 992-----------------*/
 /*----------------------------------------------*/
@@ -1223,46 +964,6 @@ button[type=submit]:hover {
         margin-right: 0px;
         font-size: 10px;
     }
-
-    /*------------House Cleaning-Media Queries 992---------*/
-    /* #content-grid {
-        grid-gap: 1rem;
-        
-    }
-    #content-grid p {
-        font-size: 15px;
-    }
-    #content-grid img {
-        max-width: 100%; 
-        box-shadow: none;
-        height: 100%;
-        display: block;
-        object-fit: scale-down;
-    }
-    .grid-item-2 h2 {
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        display: flex;
-        margin-top: 100px;
-        padding-top: 30px;  
-        margin-top: 0px;  
-    }
-    .grid-item-4 {
-        grid-column:1fr;
-        grid-row: 2/3;
-        max-width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .grid-item-6 {
-        grid-column:3/4;
-        grid-row: 2/3;
-        /* height: 100px; */
-        /* max-width: 100%;
-        height: 100%;
-        object-fit: cover;
-    } */
     .grid-item-5 {
         grid-column: 2/3;
         grid-row: 2/3;
@@ -1282,11 +983,7 @@ button[type=submit]:hover {
     a {
         text-decoration: none;
     }
-    /* .item p {
-        margin: 5px;
-        line-height: 110%;
-    }   */
-/*------------OFFICE CLEANING - Media Queries 992-----------------*/
+    /*------------OFFICE CLEANING - Media Queries 992-----------------*/
     .grid-item-a2 p, .grid-item-a4 p {
         font-size: 10px;
         line-height: 150%;
@@ -1295,6 +992,7 @@ button[type=submit]:hover {
         font-size: 20px;
     }
 }
+
 /*------------Media Queries 768-----------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
@@ -1350,6 +1048,7 @@ button[type=submit]:hover {
     .grid-item-c2 h2 {
         font-size: 20px;
     }
+}
 /*------------Media Queries 425-----------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
@@ -1371,12 +1070,6 @@ button[type=submit]:hover {
         margin-right: 0px; 
     }
 
-    /* #main-nav a {
-        font-size: 18px;
-        align-items: center;
-        padding: 14px;
-    } */
-
     #main-nav li{
         align-items: center;
     }
@@ -1388,14 +1081,6 @@ button[type=submit]:hover {
         margin: 0px;
         padding: 0px;
     }
-
-   
-    /* #main-nav a {
-        display: flex;
-        align-items: center;
-        margin: 0px;
-        font-size: 18px;
-    }  */
         
     .contact {
         display: flex;
@@ -1403,7 +1088,6 @@ button[type=submit]:hover {
         align-items: center;
         justify-content: center;
         min-width: 140px;
-        /* padding-right: 20px; */
     }
    
     .logo {
@@ -1435,7 +1119,6 @@ button[type=submit]:hover {
     .logo2 {
         color: rgb(58, 214, 201); 
         text-decoration: underline;
-        /* text-underline-position: under; */
         position: relative;
         margin-top: 35px;
         font-size: 20px;
@@ -1479,14 +1162,11 @@ button[type=submit]:hover {
         display: none;
     }
 
-    
     /*------------House Cleaning--Media Queries 425-------*/
     #content-grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: minmax(2rem, 1fr); 
-        /* grid-template-columns: 1fr;
-        grid-template-rows: minmax(300px, 300px);  */
         grid-gap: 0rem;
         max-width: 100%;
         height: 100%;
@@ -1513,8 +1193,6 @@ button[type=submit]:hover {
         justify-content: center;
         font-size: 20px;
         display: flex;
-        /* margin: 25px; */
-        /* margin-top: 80px; */
     }
     .grid-item-2 p, .grid-item-5 p {
         font-size: 15px;   
@@ -1601,7 +1279,6 @@ button[type=submit]:hover {
         grid-column: 1/11;
         grid-row:4/5;
         padding-top: 40px;
-        /* margin: 0% 5% 10% 5%;   */
     }
     .grid-item-a4 >h2, .grid-item-a2 >h2 {
         align-items: center;
@@ -1613,7 +1290,6 @@ button[type=submit]:hover {
     .grid-item-a2 p, .grid-item-a4 p{
         max-width: none;
         font-size: 15px;
-        /* margin: 0% 10% 10% 0%; */
     } 
 
     /*------------Home Organinzing--Media Queries 425-------*/
@@ -1679,24 +1355,6 @@ button[type=submit]:hover {
         grid-row:3/4;
     }
     /*---------Estimate Page--Media Queries 425-------------*/
-    /* #content-grid-estimate {
-        padding: 0px;
-        margin: 5px;
-        grid-gap: 0rem;
-    }
-    #content-grid-estimate h1{
-        margin-top: 15px;
-    } */
-    /* .grid-item-e1 {
-        border-radius: 5px;
-        background-color: #f5eded;
-        padding: 15px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }  */
-
     .grid-item-e1 {
         padding: 10px;
     }
@@ -1727,11 +1385,8 @@ button[type=submit]:hover {
         min-width: 140px;
         /* padding-right: 20px; */
     }
-
-    /* #main-nav a {
-        font-size: 18px;
-    } */
 }
+
 /*------------Media Queries 320-----------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
@@ -1750,10 +1405,6 @@ button[type=submit]:hover {
         min-width: 140px;
         /* padding-right: 20px; */
     }
-
-    /* #main-nav a {
-        font-size: 18px;
-    } */
     /*---------Home Organizing--Media Queries 320-------------*/
     /*----banner-------*/
 
@@ -1761,55 +1412,9 @@ button[type=submit]:hover {
         margin-top: 8px
     
     }
-    /*------------Home Organizing--Media Queries 768---------*/
-    /* .grid-item-b4 h2{
-        margin-left: 0%;
-    } */
-    /*------------House Cleaning --Media Queries 768---------*/
-    /* #content-grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: minmax(11rem, 300px); 
-        grid-gap: 1rem;
-        max-width: 100%;
-        height: 100%;
-        margin: 2rem 2rem 2rem 2rem;
-    }
-    #content-grid img{
-        height: 100%;
-    }
-    .grid-tem-1{
-        height: 300px;
-    }
-    .grid-item-2{
-        height: 300px;
-    } */
-    /*---------Office Cleaning--Media Queries 320-------------*/
-    /* #content-grid-office {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: minmax(12rem, 1fr); 
-        grid-gap: 1rem;
-        max-width: 100%;
-        height: 100%;
-    }
-    #content-grid-office img{
-        display: block;
-        object-fit: contain;
-        height: 50%;
-        width: 100%;
-     }
-    .text-wrapper {
-        margin-top: 10px
-    } */
+    
     /*---------Home Organizing--Media Queries 320-------------*/
-    /* .grid-item-b4 h2 {
-        padding-left: 50px;
-    } */
-    .grid-item-b2{
+    .grid-item-b2 {
         margin: 40px 0px 40px 0px;
-    }
-   
+    }  
 }
-    /*----all------*/
-
